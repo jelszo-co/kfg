@@ -1,4 +1,9 @@
 /* 
 Theme name: KFG Website theme
 Author: Jelszo Co.
+Version: 1.0.0
 */
+
+html {
+	color: #000;
+}
