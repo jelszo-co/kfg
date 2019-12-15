@@ -15,3 +15,11 @@ function kfg_scripts() {
 add_action('wp_enqueue_scripts', 'kfg_styles');
 add_action('wp_enqueue_scripts', 'kfg_scripts');
 
+add_theme_support("menus");
+
+register_nav_menus(
+  array(
+    'top_menu' => __('Top Menu', 'theme'),
+    'footer_menu' => __('Footer Menu', 'theme')
+  )
+  );
