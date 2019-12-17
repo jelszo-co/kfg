@@ -16,10 +16,31 @@ add_action('wp_enqueue_scripts', 'kfg_styles');
 add_action('wp_enqueue_scripts', 'kfg_scripts');
 
 add_theme_support("menus");
+add_theme_support("custom-header");
 
 register_nav_menus(
   array(
-    'top_menu' => __('Top Menu', 'theme'),
+    'left_menu' => __('Left menu', 'theme'),
     'footer_menu' => __('Footer Menu', 'theme')
   )
   );
+
+// function kfg_sidebars () {
+//   register_sidebar(
+//     array(
+//       'name' => 'Sidebar-l',
+//       'id' => 'sidebar-l',
+//       'class' => 'custom',
+//       'description' => 'Left sidebar'
+//     )
+//   );
+//    register_sidebar(
+//     array(
+//       'name' => 'Sidebar-r',
+//       'id' => 'sidebar-r',
+//       'class' => 'custom',
+//       'description' => 'Right sidebar'
+//     )
+//   );
+// };
+// add_action('widgets_init', 'kfg_sidebars');
