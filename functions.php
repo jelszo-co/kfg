@@ -1,7 +1,7 @@
 <?php
 
 function kfg_styles() {
-
+  wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat:200,300,400,500,600,700,800,900&display=swap', false ); 
   wp_enqueue_style('style', get_template_directory_uri() . '/css/kfg.css', array(), '1.0.0', 'all');
   wp_enqueue_style('main', get_stylesheet_uri(), array(), false, "all");
 }
@@ -20,7 +20,7 @@ add_theme_support("custom-header");
 
 register_nav_menus(
   array(
-    'left_menu' => __('Left menu', 'theme'),
+    'main_menu' => __('Left menu', 'theme'),
     'footer_menu' => __('Footer Menu', 'theme')
   )
   );
