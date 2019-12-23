@@ -9,6 +9,7 @@ function kfg_styles() {
 function kfg_scripts() {
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', "https://code.jquery.com/jquery-3.4.1.min.js", array(), "3.4.1", false);
+  wp_enqueue_script('fontawesome', "https://kit.fontawesome.com/e553576236.js", array(), "1.0.0", false);
   wp_enqueue_script('js', get_template_directory_uri() . "/js/kfg.js", array('jquery'), '1.0.0', false);
 }
 
@@ -25,22 +26,22 @@ register_nav_menus(
   )
   );
 
-// function kfg_sidebars () {
-//   register_sidebar(
-//     array(
-//       'name' => 'Sidebar-l',
-//       'id' => 'sidebar-l',
-//       'class' => 'custom',
-//       'description' => 'Left sidebar'
-//     )
-//   );
-//    register_sidebar(
-//     array(
-//       'name' => 'Sidebar-r',
-//       'id' => 'sidebar-r',
-//       'class' => 'custom',
-//       'description' => 'Right sidebar'
-//     )
-//   );
-// };
-// add_action('widgets_init', 'kfg_sidebars');
+function kfg_sidebars () {
+  register_sidebar(
+    array(
+      'name' => 'Sidebar-l',
+      'id' => 'sidebar-l',
+      'class' => 'custom',
+      'description' => 'Left sidebar'
+    )
+  );
+   register_sidebar(
+    array(
+      'name' => 'Sidebar-r',
+      'id' => 'sidebar-r',
+      'class' => 'custom',
+      'description' => 'Right sidebar'
+    )
+  );
+};
+add_action('widgets_init', 'kfg_sidebars');
