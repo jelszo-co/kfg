@@ -1,1 +1,1 @@
-<h1>Ilyen itt nincs.</h1>
+<h1 class="404">404 - Az oldal nem található!</h1>
