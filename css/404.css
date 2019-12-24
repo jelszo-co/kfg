@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
 
-body {
-  font-family: "Montserrat";
-  color: white;
-  background-color: #c43532;
-}
-
-::-moz-selection {
-  color: #c43532;
-  background: white;
-}
-
-::selection {
-  color: #c43532;
-  background: white;
-}
-
 .404 {
   position: absolute;
   margin: 0;
