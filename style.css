@@ -4,12 +4,26 @@ Author: Jelszo Co.
 Version: 1.0.0
 */
 
+/* 
+=======================
+		GLOBAL
+=======================
+*/
 /* Define color scheme */
 :root {
 	--orange: #c43532;
 	--green: #00241b;
 }
 
+::-moz-selection {
+	color: #c43532;
+	background: white;
+}
+
+::selection {
+	color: #c43532;
+	background: white;
+}
 /*
 Define font scaling scheme
 h1 font-size: 4.209em;
@@ -31,6 +45,12 @@ body {
 	width: 80vw;
 	margin: 0 10vw;
 }
+
+/* 
+=======================
+		HEADER
+=======================
+*/
 .header-placeholder {
 	width: 100%;
 }
@@ -69,12 +89,19 @@ header p {
 	letter-spacing: 2pt;
 }
 
+/* 
+=======================
+		SIDEBARS
+=======================
+*/
 .sidebar {
+	position: relative;
 	width: 20%;
 	background: var(--orange);
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	z-index: 1;
 }
 
 #sidebar-left {
@@ -86,6 +113,8 @@ header p {
 }
 
 .widget {
+	position: relative;
+	z-index: 1;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -176,4 +205,80 @@ header p {
 #cookies-wrapper p {
 	width: 60%;
 	margin: 0 20% 20px;
+}
+
+/* 
+=======================
+	   MAIN MENU
+=======================
+*/
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 100;
+}
+
+.nav-opener {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 30px;
+	height: 100%;
+	cursor: pointer;
+	background: var(--green);
+}
+
+.nav-opener p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	writing-mode: tb-rl;
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.kfg-nav {
+	padding: 10% 20px;
+	margin: 0;
+	height: 80%;
+	list-style: none;
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: var(--green);
+}
+
+.kfg-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.kfg-nav * {
+	color: white;
+	text-decoration: none;
+}
+
+.kfg-nav li {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.sub-menu li {
+	text-transform: none;
 }

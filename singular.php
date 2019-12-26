@@ -1,7 +1,10 @@
 <?php get_header(); ?>
-<div class="header-placeholder"></div>
 <?php get_sidebar("Sidebar-l") ?>
 <?php get_sidebar("Sidebar-R") ?>
+<h1><?php the_title();?></h1>
+<?php if (have_posts()) : while(have_posts()) : the_post();?>
+<?php the_content();?>
+<?php endwhile; endif;?>
 <!-- <nav>
 <h3>Main menu</h3>
     <?php wp_nav_menu(
