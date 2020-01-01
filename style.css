@@ -39,11 +39,11 @@ html {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	background: #ccc;
+	background: white;
 }
 
 body {
-	background: #aaa;
+	background: white;
 	position: relative;
 	width: 80vw;
 	padding: 0 calc(10vw - 8.5px);
