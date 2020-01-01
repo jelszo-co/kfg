@@ -34,6 +34,11 @@ jQuery(($) => {
 			}
 		);
 
+		$(".sidebar").css("height", $("html").height() - $("header").height());
+		$("body").css({
+			height: $("html").height(),
+			"margin-bottom": $("footer").height()
+		});
 		$(".menu-item-object-category > a").attr("href", null);
 	});
 });
