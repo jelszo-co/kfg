@@ -23,11 +23,7 @@ jQuery(($) => {
 
 		$("nav").hover(
 			() => {
-				$(".kfg-nav").css(
-					"left",
-					//-$(".nav-opener").width()
-					0
-				);
+				$(".kfg-nav").css("left", 0);
 			},
 			() => {
 				$(".kfg-nav").css("left", -menuWidth);
