@@ -15,7 +15,7 @@
 <body <?php body_class();?>>
 
 <header>
-    <img id="header-img" src="<?php echo get_template_directory_uri(); ?>/header.png">
+    <img id="header-img" async=on src="<?php echo get_template_directory_uri(); ?>/header.png">
     <p>Nyíregyházi Kölcsey Ferenc Gimnázium</p>
 </header>
 

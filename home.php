@@ -13,9 +13,13 @@
 <?php get_header(); ?>
 <?php get_sidebar("Sidebar-l") ?>
 <?php get_sidebar("Sidebar-R") ?>
-<?php if (have_posts()) : while(have_posts()) : the_post();?>
-<?php the_title();?>
-<?php the_excerpt();?>
-<h6><a href=<?php the_permalink();?>>Cikk megtekintése</a></h6>
-<?php endwhile; endif;?>
+<div class="posts-home">
+    <?php if (have_posts()) : while(have_posts()) : the_post();?>
+    <div class="post">
+        <h2 class="post__title"><?php the_title();?></h2>
+        <div class="post__excerpt"><?php the_excerpt();?></div>
+        <h6 class="post__permalink"><a href=<?php the_permalink();?>>Cikk megtekintése</a></h6>
+    </div>
+    <?php endwhile; endif;?>
+</div>
 <?php get_footer(); ?>

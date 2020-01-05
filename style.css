@@ -16,12 +16,12 @@ Version: 1.0.0
 }
 
 ::-moz-selection {
-	color: #c43532;
+	color: var(--orange);
 	background: white;
 }
 
 ::selection {
-	color: #c43532;
+	color: var(--orange);
 	background: white;
 }
 /*
@@ -288,6 +288,55 @@ nav {
 
 .sub-menu li {
 	text-transform: none;
+}
+
+/* 
+=======================
+	   	CONTENT
+=======================
+*/
+
+.posts-home {
+	position: relative;
+	margin: 0;
+	margin-top: 50px;
+}
+
+.posts-home .post::selection,
+.posts-home .post::-moz-selection {
+	background: var(--green);
+	color: white;
+}
+
+.posts-home .post {
+	margin: 0 29%;
+	padding: 0 3%;
+}
+
+.posts-home .post:not(:last-of-type) {
+	border-bottom: 2pt solid var(--orange);
+}
+
+.posts-home .post__title {
+	color: var(--green);
+	font-weight: 500;
+	font-size: 1.5rem;
+	letter-spacing: 2pt;
+}
+
+.posts-home .post__excerpt p {
+	font-weight: 300;
+	font-size: 1rem;
+	letter-spacing: 1pt;
+	color: var(--green);
+	line-height: 1.5rem;
+}
+
+.posts-home .post__permalink a {
+	color: var(--orange);
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 0.8rem;
 }
 
 /* 
