@@ -26,7 +26,7 @@
     </div>
 
     <div class="footer-copyright">
-        <p>&commat; 2019. Minden jog fenntarva.</p>
+        <p>&copy;<span></span>. Minden jog fenntarva.</p>
     </div>
 
     <div class="designby">

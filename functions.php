@@ -10,7 +10,7 @@ add_theme_support( 'post-thumbnails' );
 function kfg_styles() {
   wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat:200,300,400,500,600,700,800,900&display=swap', false ); 
   wp_enqueue_style('main', get_stylesheet_uri(), array(), false, "all");
-  wp_enqueue_style('404', get_template_directory_uri() . '/css/404.css', array(), '1.0.0', 'all');
+  wp_enqueue_style('404', get_template_directory_uri() . "/css/404.css", array(), '1.0.0', 'all');
 }
 
 function kfg_scripts() {

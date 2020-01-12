@@ -14,6 +14,15 @@
 
 <body <?php body_class();?>>
 
+<div id="preloader">
+    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+        <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1">
+            <circle class="cls-2" cx="256" cy="256" r="150"/>
+            <circle class="cls-3" cx="256" cy="256" r="140"/>
+        </g>
+    </svg>
+</div>
+
 <header>
     <img id="header-img" async=on src="<?php echo get_template_directory_uri(); ?>/header.png">
     <p>Nyíregyházi Kölcsey Ferenc Gimnázium</p>
